@@ -1,0 +1,52 @@
+extends base.pug  
+
+block scripts
+  script(src='/static/index.js')
+  
+
+block style
+    style
+      include ../static/style.css
+
+block content 
+    section#introsection  
+        div Welcome to vishu's dance academy 
+        div.small eat sleep dance repeat
+
+    section#missionsection 
+        h2  our mission
+        div.card
+          h3 dance perfection
+          div.card-box 
+            div.card-img3  
+              img(src="/static/hip.jpeg", alt="")
+
+              div.card-content 
+                p this is the best dance academy of the universe Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam debitis tenetur necessitatibus amet et repudiandae porro quisquam fugit facere quam dolorum sint facilis hic quae perferendis suscipit inventore aperiam optio expedita earum, in unde deleniti odit esse?
+
+        div.card
+          h3 dance the way you like 
+          div.card-box 
+            div.card-img2  
+              img(src="/static/hiphop.jpeg", alt="")
+
+              div.card-content 
+                p this is the best dance academy of the universe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed, nihil enim perferendis consequatur laudantium? Et alias doloremque fuga. Perspiciatis eum culpa deserunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, aut! Lorem ipsum dolor sit amet.
+        div.card
+          h3 expert teaching
+          div.card-box 
+            div.card-img1  
+              img(src="/static/logo.png", alt="")
+
+              div.card-content 
+                p this is the best dance academy of the universe Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo distinctio vel quos illum consequatur maiores, ducimus magni delectus fugiat unde consectetur ipsam corrupti obcaecati blanditiis dolorum? Eligendi, fuga asperiores praesentium quam soluta fugiat laborum. Vel itaque unde assumenda!
+
+
+
+    section#sponsorssection 
+        h2  our sponsors
+        div#sponsors 
+          //- img(src="/static/logo1.png", alt="Sponsor Image", class="spImage")
+          img(src="/static/logo2.png", alt="Sponsor Image", class="spImage")
+          img(src="/static/logo3.png", alt="Sponsor Image", class="spImage")
+          img(src="/static/logo4.png", alt="Sponsor Image", class="spImage")
